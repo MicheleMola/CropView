@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		DE89221C2360C45B00EF9130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE89221B2360C45B00EF9130 /* Assets.xcassets */; };
 		DE89221F2360C45B00EF9130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE89221D2360C45B00EF9130 /* LaunchScreen.storyboard */; };
 		DE89222A2360C45B00EF9130 /* CropViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8922292360C45B00EF9130 /* CropViewTests.swift */; };
+		DE8922362360FA0A00EF9130 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = DE8922352360FA0A00EF9130 /* PinLayout */; };
+		DE8922382360FC8000EF9130 /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8922372360FC8000EF9130 /* CropView.swift */; };
+		DE89223A2361982E00EF9130 /* ScrollableAndZoomingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8922392361982E00EF9130 /* ScrollableAndZoomingImageView.swift */; };
+		DE89223C236198AD00EF9130 /* CropRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89223B236198AD00EF9130 /* CropRectView.swift */; };
+		DE89223E23619A9E00EF9130 /* Lunedì.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE89223D23619A9E00EF9130 /* Lunedì.jpg */; };
+		DE8922482361E6F400EF9130 /* Mercoledì.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE8922472361E6F400EF9130 /* Mercoledì.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,11 @@
 		DE8922252360C45B00EF9130 /* CropViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8922292360C45B00EF9130 /* CropViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropViewTests.swift; sourceTree = "<group>"; };
 		DE89222B2360C45B00EF9130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE8922372360FC8000EF9130 /* CropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
+		DE8922392361982E00EF9130 /* ScrollableAndZoomingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableAndZoomingImageView.swift; sourceTree = "<group>"; };
+		DE89223B236198AD00EF9130 /* CropRectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropRectView.swift; sourceTree = "<group>"; };
+		DE89223D23619A9E00EF9130 /* Lunedì.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Lunedì.jpg"; path = "../Lunedì.jpg"; sourceTree = "<group>"; };
+		DE8922472361E6F400EF9130 /* Mercoledì.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mercoledì.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8922362360FA0A00EF9130 /* PinLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +93,11 @@
 			children = (
 				DE8922122360C45900EF9130 /* AppDelegate.swift */,
 				DE8922142360C45900EF9130 /* SceneDelegate.swift */,
-				DE8922162360C45900EF9130 /* ViewController.swift */,
+				DE8922432361E37A00EF9130 /* Main Screen */,
 				DE8922182360C45900EF9130 /* Main.storyboard */,
 				DE89221B2360C45B00EF9130 /* Assets.xcassets */,
 				DE89221D2360C45B00EF9130 /* LaunchScreen.storyboard */,
+				DE8922442361E38B00EF9130 /* Images */,
 				DE8922202360C45B00EF9130 /* Info.plist */,
 			);
 			path = CropView;
@@ -97,6 +110,42 @@
 				DE89222B2360C45B00EF9130 /* Info.plist */,
 			);
 			path = CropViewTests;
+			sourceTree = "<group>";
+		};
+		DE89223F23619ABD00EF9130 /* Crop */ = {
+			isa = PBXGroup;
+			children = (
+				DE8922372360FC8000EF9130 /* CropView.swift */,
+				DE89224023619ACB00EF9130 /* Subviews */,
+			);
+			path = Crop;
+			sourceTree = "<group>";
+		};
+		DE89224023619ACB00EF9130 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				DE8922392361982E00EF9130 /* ScrollableAndZoomingImageView.swift */,
+				DE89223B236198AD00EF9130 /* CropRectView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		DE8922432361E37A00EF9130 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DE8922162360C45900EF9130 /* ViewController.swift */,
+				DE89223F23619ABD00EF9130 /* Crop */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		DE8922442361E38B00EF9130 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DE8922472361E6F400EF9130 /* Mercoledì.jpg */,
+				DE89223D23619A9E00EF9130 /* Lunedì.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +164,9 @@
 			dependencies = (
 			);
 			name = CropView;
+			packageProductDependencies = (
+				DE8922352360FA0A00EF9130 /* PinLayout */,
+			);
 			productName = CropView;
 			productReference = DE89220F2360C45900EF9130 /* CropView.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +217,9 @@
 				Base,
 			);
 			mainGroup = DE8922062360C45900EF9130;
+			packageReferences = (
+				DE8922342360FA0A00EF9130 /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			productRefGroup = DE8922102360C45900EF9130 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -183,6 +238,8 @@
 				DE89221F2360C45B00EF9130 /* LaunchScreen.storyboard in Resources */,
 				DE89221C2360C45B00EF9130 /* Assets.xcassets in Resources */,
 				DE89221A2360C45900EF9130 /* Main.storyboard in Resources */,
+				DE89223E23619A9E00EF9130 /* Lunedì.jpg in Resources */,
+				DE8922482361E6F400EF9130 /* Mercoledì.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE89223C236198AD00EF9130 /* CropRectView.swift in Sources */,
+				DE8922382360FC8000EF9130 /* CropView.swift in Sources */,
 				DE8922172360C45900EF9130 /* ViewController.swift in Sources */,
+				DE89223A2361982E00EF9130 /* ScrollableAndZoomingImageView.swift in Sources */,
 				DE8922132360C45900EF9130 /* AppDelegate.swift in Sources */,
 				DE8922152360C45900EF9130 /* SceneDelegate.swift in Sources */,
 			);
@@ -469,6 +529,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE8922342360FA0A00EF9130 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.12;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE8922352360FA0A00EF9130 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE8922342360FA0A00EF9130 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE8922072360C45900EF9130 /* Project object */;
 }
