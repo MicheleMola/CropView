@@ -1,5 +1,5 @@
 # CropView
-Amazing image cropper written in Swift; for iOS devices with support for landscape and portrait orientation.
+Amazing image cropper written in Swift for iOS devices with support for landscape and portrait orientation.
 Cropper view allows to specify the location and size of the crop rectangle. Easy to set up.
 
 Features:
