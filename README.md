@@ -9,6 +9,6 @@ Features:
 - Changing crop rectangle callback method
 
 
-This project uses the PinLayout library.
+This project uses the PinLayout library via SPM.
 
 [![CropView](http://img.youtube.com/vi/vJwWPFUMfUA/0.jpg)](http://www.youtube.com/watch?v=vJwWPFUMfUA "CropView")
